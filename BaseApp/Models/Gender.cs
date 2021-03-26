@@ -13,6 +13,7 @@ namespace BaseApp.Models
     // one to one
     public class Gender : Entity
     {
+        //Add Comment
         public string Name { get; set; }
 
         public virtual ICollection<Athlet> Athlets { get; set; }

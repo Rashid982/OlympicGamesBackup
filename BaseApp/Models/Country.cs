@@ -8,6 +8,7 @@ namespace BaseApp.Models
 {
     public class Country : Entity
     {
+        //Add comment
         public string  Name  { get; set; }
         public virtual ICollection<Athlet> Athlets { get; set; }       
     }
