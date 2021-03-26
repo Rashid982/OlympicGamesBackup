@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BaseApp.Models
 {
-   public  class WeightLimite
+   public  class WeightLimite : Entity
     {
-        public int Id { get; set; }
         public double MaxWeight { get; set; }
         public double MinWeight { get; set; }
 
+        public virtual ICollection<SubSportType> SubSportTypes { get; set; }
     }
 }

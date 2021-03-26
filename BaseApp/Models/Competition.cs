@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace BaseApp.Models
 {
-    public class Competition
+    public class Competition  : Entity
     {
-        public int Id { get; set; }
         public bool IsFinal { get; set; }
         public DateTime StartTime { get; set; }
-        public virtual SportType SportType { get; set; }
-        public virtual List<Athlet> Athlets  { get; set; }
+        public DateTime EndTime { get; set; }
+        public virtual SubSportType SubSportType { get; set; }
+
+        public virtual ICollection<Athlet> Athlets  { get; set; }
     }
 }

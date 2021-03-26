@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace BaseApp.Models
 {
-    public class LengthLimite
+    public class LengthLimite : Entity
     {
-        public int Id { get; set; }
         public double MaxLength { get; set; }
         public double MinLength { get; set; }
+
+        public virtual ICollection<SubSportType> SubSportTypes { get; set; }
+
     }
 }

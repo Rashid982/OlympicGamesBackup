@@ -10,7 +10,9 @@ namespace BaseApp.Entity
 {
     public class OlimpicDBContext : DbContext
     {
-        public OlimpicDBContext() : base("Connection"){}
+        public OlimpicDBContext() : base("OlimpDb")
+        {
+        }
         public DbSet<Country> Contries { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<WeightLimite> WeightLimites { get; set; }
@@ -20,5 +22,14 @@ namespace BaseApp.Entity
         public DbSet<Competition> Competitions { get; set; }
         public DbSet<Medal> Medals { get; set; }
         public DbSet<Athlet> Athlets { get; set; }
+    }
+
+    public class DbInit : CreateDatabaseIfNotExists<OlimpicDBContext>
+    {
+        //data seeding
+        protected override void Seed(OlimpicDBContext context)
+        {
+            base.Seed(context);
+        }
     }
 }

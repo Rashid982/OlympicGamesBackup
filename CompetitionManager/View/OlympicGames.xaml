@@ -7,6 +7,8 @@
         xmlns:VM="clr-namespace:CompetitionManager.ViewModel"
         mc:Ignorable="d"
         Title="OlympicGames" Height="450" Width="800" MinWidth="800" MinHeight="450">
+
+
     <Window.Resources>
         <DataTemplate DataType="{x:Type VM:CompetitionVM}">
             <local:CompetitionUC/>

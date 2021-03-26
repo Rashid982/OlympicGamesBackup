@@ -78,10 +78,15 @@
     <Compile Include="Migrations\202103251239128_AddLengthLimiteClass.designer.cs">
       <DependentUpon>202103251239128_AddLengthLimiteClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103252319069_something1.cs" />
+    <Compile Include="Migrations\202103252319069_something1.designer.cs">
+      <DependentUpon>202103252319069_something1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Athlet.cs" />
     <Compile Include="Models\Competition.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Entity.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\LengthLimite.cs" />
     <Compile Include="Models\Medal.cs" />
@@ -101,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103251239128_AddLengthLimiteClass.resx">
       <DependentUpon>202103251239128_AddLengthLimiteClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103252319069_something1.resx">
+      <DependentUpon>202103252319069_something1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

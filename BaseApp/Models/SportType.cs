@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace BaseApp.Models
 {
-    public class SportType
+    public class SportType : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public virtual WeightLimite WeightLimite { get; set; }
-        public virtual LengthLimite LengthLimite { get; set; }
-        public Gender Gender { get; set; }
-        public virtual List<SportType> SportTypes { get; set; }
+        public virtual ICollection<SubSportType> SubSportTypes { get; set; }
 
     }
 }
