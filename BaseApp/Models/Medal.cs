@@ -7,11 +7,20 @@ using System.Threading.Tasks;
 
 namespace BaseApp.Models
 {
+    public enum MedalType
+    { 
+        Bronze = 1,
+        Silver = 2,
+        Gold = 3
+    }
+
+
     public class Medal  : Entity
     {
-        public int Degree { get; set; }
-        public int Name { get; set; }
+        public MedalType MedalType { get; set; }
 
         public virtual ICollection<Athlet> Athlets { get; set; }
+
+       
     }
 }
