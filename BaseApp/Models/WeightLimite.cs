@@ -11,6 +11,8 @@ namespace BaseApp.Models
         public double MaxWeight { get; set; }
         public double MinWeight { get; set; }
 
+        // some awesome comment
+
         public virtual ICollection<SubSportType> SubSportTypes { get; set; }
     }
 }
